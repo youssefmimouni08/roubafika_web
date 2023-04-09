@@ -5,7 +5,14 @@
 # the "app_lucky_number" route name is not important yet
 homepage:
   path: /
-  controller: App\Controller\LuckyController::homepage
-app_baha:
-  path: /baha
-  controller: App\Controller\LuckyController::baha
+  controller: App\Controller\HomeController::homepage
+adminDashboard:
+  path: /admin
+  controller: App\Controller\HomeController::adminDashboard
+verify_email:
+  path: /verify
+  controller: App\Controller\HomeController::index
+
+app_logout:
+  path: /logout
+  methods: GET
